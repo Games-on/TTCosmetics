@@ -62,6 +62,7 @@ public class ProductService {
             return this.productRepository.findAll(page);
         }
 
+
         Specification<Product> combinedSpec = Specification.where(null);
 
         if (productCriteriaDTO.getTarget() != null && productCriteriaDTO.getTarget().isPresent()) {
@@ -90,21 +91,21 @@ public class ProductService {
 
             // Set the appropriate min and max based on the price range string
             switch (p) {
-                case "duoi-10-trieu":
+                case "duoi-100-k":
                     min = 1;
-                    max = 10000000;
+                    max = 99000;
                     break;
-                case "10-15-trieu":
-                    min = 10000000;
-                    max = 15000000;
+                case "100-k-200-k":
+                    min = 100000;
+                    max = 200000;
                     break;
-                case "15-20-trieu":
-                    min = 15000000;
-                    max = 20000000;
+                case "200-k-500-k":
+                    min = 200001;
+                    max = 500000;
                     break;
-                case "tren-20-trieu":
-                    min = 20000000;
-                    max = 200000000;
+                case "tren-500-k":
+                    min = 500001;
+                    max = 2000000;
                     break;
             }
 

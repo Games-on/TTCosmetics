@@ -130,28 +130,26 @@
 
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="price-2"
-                                                        value="duoi-10-trieu">
-                                                    <label class="form-check-label" for="price-2">Dưới 10 triệu</label>
+                                                        value="duoi-100-k">
+                                                    <label class="form-check-label" for="price-2">Dưới 100K</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="price-3"
-                                                        value="10-15-trieu">
-                                                    <label class="form-check-label" for="price-3">Từ 10 - 15
-                                                        triệu</label>
+                                                        value="100-k-200-k">
+                                                    <label class="form-check-label" for="price-3">Từ 100K - 200K</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="price-4"
-                                                        value="15-20-trieu">
-                                                    <label class="form-check-label" for="price-4">Từ 15 - 20
-                                                        triệu</label>
+                                                        value="200-k-500-k">
+                                                    <label class="form-check-label" for="price-4">Từ 200K - 500K</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="price-5"
-                                                        value="tren-20-trieu">
-                                                    <label class="form-check-label" for="price-5">Trên 20 triệu</label>
+                                                        value="tren-500-k">
+                                                    <label class="form-check-label" for="price-5">Trên 500K</label>
                                                 </div>
                                             </div>
                                             <div class="col-12">
