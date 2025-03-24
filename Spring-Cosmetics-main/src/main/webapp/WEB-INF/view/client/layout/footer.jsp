@@ -22,22 +22,24 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="#">About Us</a>
-
+                            <h4 class="text-light mb-3">Về Thủy Tiên</h4>
+                            <a class="btn-link" href="/about">Giới thiệu</a>
+                            <a class="btn-link" href="/products">Sản phẩm</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="#">My Account</a>
+                            <h4 class="text-light mb-3">Chính sách</h4>
+                            <a class="btn-link" href="#">Quy định sử dụng</a>
+                            <a class="btn-link" href="#">Chính sách bảo mật</a>
+                            <a class="btn-link" href="#">Chính sách vận chuyển</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
+                            <h4 class="text-light mb-3">Liên hệ</h4>
                             <p>Author: An Pham</p>
-                            <p>Website: <a href="https://www.facebook.com/Pham13a07/" target="_blank">thuytiencosmetics.com</a></p>
+                            <p>Website: <a href="#">thuytiencosmetics.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +60,8 @@
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed
-                        By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+<%--                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed--%>
+<%--                        By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>--%>
                     </div>
                 </div>
             </div>

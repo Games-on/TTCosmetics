@@ -191,8 +191,6 @@
                         </div>
                     </div>
                     <!-- Cart Page End -->
-
-
                     <jsp:include page="../layout/footer.jsp" />
 
 

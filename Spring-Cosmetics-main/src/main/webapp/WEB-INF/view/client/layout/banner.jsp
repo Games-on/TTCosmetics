@@ -27,7 +27,7 @@
                                     <a href="#" class="btn px-4 py-2 text-white rounded">Eyes</a>
                                 </div>
                                 <div class="carousel-item rounded">
-                                    <img src="/client/img/hero-img-4.png" class="img-fluid w-100 h-100 rounded"
+                                    <img src="/images/product/hero-img-4-update.png" class="img-fluid w-100 h-100 rounded"
                                          alt="Second slide">
                                     <a href="#" class="btn px-4 py-2 text-white rounded">Makeup Tool</a>
                                 </div>
