@@ -71,13 +71,13 @@ public class SecurityConfiguration {
 
                         .requestMatchers("/admin/**").hasRole("ADMIN") // bat cu ai co role la ADMIN thi duoc vao
 
-                        .anyRequest().authenticated()) // request nao cung phai xac thuc
+                        .anyRequest().authenticated()) // request nào cũng phải xác thực
 
                 .sessionManagement((sessionManagement) -> sessionManagement
                         .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
                         .invalidSessionUrl("/logout?expired") // khi het han session thi tu dong logout
-                        .maximumSessions(1) // gioi han tk dang nhap, neu nhung toi dang dung tk ma 1 ngkhac dang nhap thi ko vao dc
-                        .maxSessionsPreventsLogin(false)) // xet la false => nguoi sau dang nhap vao thi se đá người trươc ra
+                        .maximumSessions(1) // giới hạn tk đăng nhập, nêếu như tôi đang dùng tk ma 1 ngkhac dang nhap thi ko vao dc
+                        .maxSessionsPreventsLogin(false)) // xet la false => người sau đăng nhập vao thì sẽ đá người trước ra
 
                 .logout(logout -> logout.deleteCookies("JSESSIONID").invalidateHttpSession(true)) // moi 1 lan logout thi xoa cookies di va báo hiệu session hết hạn.
 

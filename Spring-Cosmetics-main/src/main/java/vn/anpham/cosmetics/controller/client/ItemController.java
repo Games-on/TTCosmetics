@@ -72,7 +72,6 @@ public class ItemController {
 
         model.addAttribute("cartDetails", cartDetails);
         model.addAttribute("totalPrice", totalPrice);
-
         model.addAttribute("cart", cart);
 
         return "client/cart/show";
@@ -165,7 +164,6 @@ public class ItemController {
             // page = 1
             // TODO: handle exception
         }
-
         // check sort price
         Pageable pageable = PageRequest.of(page - 1, 12);
 

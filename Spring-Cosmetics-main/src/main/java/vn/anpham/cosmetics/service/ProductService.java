@@ -250,7 +250,14 @@ public class ProductService {
                     orderDetail.setQuantity(cd.getQuantity());
 
                     this.orderDetailRepository.save(orderDetail);
+
+//                      Cập nhật số lượng sản phẩm trong kho
+                    Product product = cd.getProduct();
+                    product.setQuantity(product.getQuantity() - cd.getQuantity());
+                    this.productRepository.save(product);
                 }
+
+
 
                 // step 2: delete cart_detail and cart
                 for (CartDetail cd : cartDetails) {
