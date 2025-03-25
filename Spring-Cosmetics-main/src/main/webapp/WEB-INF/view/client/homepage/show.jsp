@@ -112,10 +112,16 @@
                                                                             value="${_csrf.token}" /> -->
 
                                                                     <button data-product-id="${product.id}"
-                                                                        class="btnAddToCartHomepage mx-auto btn border border-secondary rounded-pill px-3 text-primary">
+                                                                        class="btnAddToCartHomepage mx-auto btn border border-secondary rounded-pill px-3 text-primary"
+                                                                        ${product.quantity == 1 ? 'disabled="disabled"' : ''}>
                                                                         <i class="fa fa-shopping-bag me-2 text-primary"></i>
                                                                         Add to cart
                                                                     </button>
+
+<%--                                                                    <button class="btn btn-primary w-100 mt-3 border border-secondary rounded-pill px-3 text-white"--%>
+<%--                                                                        ${product.quantity == 1 ? 'disabled="disabled"' : ''}>--%>
+<%--                                                                        <i class="fa fa-shopping-bag me-2 text-white"></i> Add to cart--%>
+<%--                                                                    </button>--%>
                                                                     <!-- </form> -->
                                                                 </div>
                                                             </div>

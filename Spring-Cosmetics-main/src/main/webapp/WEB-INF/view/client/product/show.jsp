@@ -221,11 +221,16 @@
                                                                     <input type="hidden" name="${_csrf.parameterName}"
                                                                         value="${_csrf.token}" />
 
-                                                                    <button
-                                                                        class="mx-auto btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                                            class="fa fa-shopping-bag me-2 text-primary"></i>
-                                                                        Add to cart
+                                                                    <button class="btn btn-primary w-100 mt-3 border border-secondary rounded-pill px-3 text-white"
+                                                                        ${product.quantity == 1 ? 'disabled="disabled"' : ''}>
+                                                                        <i class="fa fa-shopping-bag me-2 text-white"></i> Add to cart
                                                                     </button>
+
+<%--                                                                    <button--%>
+<%--                                                                        class="mx-auto btn border border-secondary rounded-pill px-3 text-primary"><i--%>
+<%--                                                                            class="fa fa-shopping-bag me-2 text-primary"></i>--%>
+<%--                                                                        Add to cart--%>
+<%--                                                                    </button>--%>
                                                                 </form>
                                                             </div>
                                                         </div>

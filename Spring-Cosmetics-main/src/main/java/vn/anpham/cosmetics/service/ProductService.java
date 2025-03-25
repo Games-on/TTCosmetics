@@ -253,8 +253,15 @@ public class ProductService {
 
 //                      Cập nhật số lượng sản phẩm trong kho
                     Product product = cd.getProduct();
-                    product.setQuantity(product.getQuantity() - cd.getQuantity());
-                    this.productRepository.save(product);
+                    int currentQuantity = (int) product.getQuantity();
+                    int orderQuantity = (int) cd.getQuantity();
+
+                    if (currentQuantity >= orderQuantity) {
+                        product.setQuantity(currentQuantity - orderQuantity);
+                        this.productRepository.save(product);
+                    } else {
+                        throw new RuntimeException("Số lượng sản phẩm không đủ trong kho!");
+                    }
                 }
 
 
